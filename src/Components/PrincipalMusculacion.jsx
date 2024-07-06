@@ -7,7 +7,7 @@ import Transferencia from '../Images/transferencia.png';
 import Efectivo from '../Images/efectivo.png';
 import Promociones from './Promociones';
 import { useNavigate } from 'react-router-dom';
-
+ 
 const PrincipalMusculacion = () => {
   const navigate = useNavigate();
 
@@ -48,7 +48,7 @@ const PrincipalMusculacion = () => {
 
       <div className="payment-info" onClick={handleEfectivoClick}>
         <img src={Efectivo} alt="Efectivo" className="card-icon" />
-        <p className="payment-text">Efectivo</p>
+        <p className="payment-text" title='¡5% off! 🤩'>Efectivo</p>
       </div>
       <Promociones></Promociones>
     </div>

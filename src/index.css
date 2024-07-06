@@ -50,12 +50,13 @@ html, body, #root {
 .message {
   color: white;
   font-size: 5rem;
+  font-weight: 400;
   text-transform: uppercase;
   margin-top: -15rem; /* Ajuste según sea necesario */
 }
 
 .plan-info {
-  margin-top: 2rem;
+  margin-top: 1rem;
   background-color: white;
   border-radius: 20px;
   padding: 20px;
@@ -69,12 +70,14 @@ html, body, #root {
   text-transform: uppercase;
   margin: 0;
 }
+
 .payment-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
   margin-top: 1.5rem;
-  background-color: white;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
   width: 40%; /* Asegura que cada elemento tenga el mismo ancho */
   align-items: center;
   transition: transform 0.3s ease-out; /* Transición suave para transformaciones */
@@ -91,9 +94,21 @@ html, body, #root {
   font-size: 2rem;
   text-transform: uppercase;
   margin: 0;
+  height: 60px;
+  width: 150px; /* Ancho por defecto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 .card-icon {
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
   width: 50px; /* Ajusta el tamaño del icono según sea necesario */
   height: auto;
   margin-right: 10px; /* Espacio entre el icono y el texto */
@@ -127,16 +142,26 @@ html, body, #root {
     margin-top: -3rem; /* Ajuste según sea necesario */
   }
 
+  .payment-info {
+    flex-direction: column;
+  }
+
   .plan-text, .payment-text {
     font-size: 1.2rem;
   }
 }
 
-.m2{
+/* Media query para pantallas anchas */
+@media (min-width: 1201px) {
+  .payment-text {
+    width: 300px; /* Ancho de 300px para pantallas mayores a 1200px */
+  }
+}
+
+.m2 {
   margin-top: 2rem;
 }
 
-/* src/index.css */
 .square-div {
   display: flex;
   justify-content: center;
@@ -148,5 +173,3 @@ html, body, #root {
   max-width: 100%;
   max-height: 100%;
 }
-
-
