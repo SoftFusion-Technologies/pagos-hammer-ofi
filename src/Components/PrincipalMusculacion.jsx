@@ -14,6 +14,11 @@ const PrincipalMusculacion = () => {
   const handleTransferenciaClick = () => {
     navigate('/transferencia', { replace: false });
   };
+
+  const handleEfectivoClick = () => {
+    navigate('/efectivo', { replace: false });
+  };
+
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -41,7 +46,7 @@ const PrincipalMusculacion = () => {
         <p className="payment-text">Transferencia</p>
       </div>
 
-      <div className="payment-info">
+      <div className="payment-info" onClick={handleEfectivoClick}>
         <img src={Efectivo} alt="Efectivo" className="card-icon" />
         <p className="payment-text">Efectivo</p>
       </div>
