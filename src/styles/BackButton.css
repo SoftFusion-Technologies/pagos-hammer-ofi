@@ -1,0 +1,42 @@
+.back-button {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    color: white; /* Gray-700 */
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 16px;
+}
+.back-button:focus {
+    outline: none;
+}
+.back-button-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    transition: all .4s;
+}
+.btn{
+    color: white;
+}
+.back-button:hover .back-button-icon {
+    transform: translateX(-10px);
+}
+.link{
+    top: 0;
+    text-decoration: none;
+}
+@media (min-width:640px) {
+    .btn{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+    .back-button-icon {
+        width: 44px;
+        height: 34px;
+        margin-right: 5px;
+        transition: all .4s;
+    }
+}

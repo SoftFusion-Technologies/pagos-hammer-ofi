@@ -19,6 +19,10 @@ const PrincipalMusculacion = () => {
     navigate('/efectivo', { replace: false });
   };
 
+  const handleCreditoClick = () => {
+    navigate('/cuotas', { replace: false, state: { cuotas1: true, cuotas3: false, cuotas6: false, cuotas12: false } });
+  };
+
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -30,8 +34,13 @@ const PrincipalMusculacion = () => {
           Estás por abonar tu plan: mes musculación monteros
         </p>
       </div>
+      <div className="plan-info">
+        <p className="plan-text">
+        Monto a abornar: $19.000
+        </p>
+      </div>
 
-      <div className="payment-info">
+      <div className="payment-info" onClick={handleCreditoClick}>
         <img src={Tarjeta} alt="Tarjeta de crédito" className="card-icon" />
         <p className="payment-text">Tarjeta de crédito</p>
       </div>
