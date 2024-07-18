@@ -19,8 +19,8 @@ const PrincipalMusculacion = () => {
     navigate('/efectivo', { replace: false });
   };
 
-  const handleCreditoClick = () => {
-    navigate('/cuotas', { replace: false, state: { cuotas1: true, cuotas3: false, cuotas6: false, cuotas12: false } });
+  const handleDebitoClick = () => {
+    navigate('/tarjeta-debito', { replace: false });
   };
 
   return (
@@ -40,12 +40,12 @@ const PrincipalMusculacion = () => {
         </p>
       </div>
 
-      <div className="payment-info" onClick={handleCreditoClick}>
-        <img src={Tarjeta} alt="Tarjeta de crédito" className="card-icon" />
-        <p className="payment-text">Tarjeta de crédito</p>
+      <div className="payment-info" style={{cursor: "not-allowed"}}>
+        <img src={Tarjeta} alt="Tarjeta de crédito" className="card-icon" style={{backgroundColor: "#C3C3C3"}} />
+        <p className="payment-text" style={{backgroundColor: "#C3C3C3"}}>Tarjeta de crédito</p>
       </div>
 
-      <div className="payment-info">
+      <div className="payment-info" onClick={handleDebitoClick}>
         <img src={Tarjeta} alt="Tarjeta de débito" className="card-icon" />
         <p className="payment-text">Tarjeta de débito</p>
       </div>

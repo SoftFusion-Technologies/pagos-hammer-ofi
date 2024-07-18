@@ -2,12 +2,8 @@ import React from 'react';
 import '../styles/transferencia.css';
 import Promociones from './Promociones';
 import BackButton from './Arrow';
-import { useLocation } from 'react-router-dom';
 
-const TarjetaCredito = () => {
-  const location = useLocation();
-  const { cuotas } = location.state; //cantidad de cuotas que se seleccionó
-
+const TarjetaDedito = () => {
   return (
     <>
       <div className='contenttr' >
@@ -16,15 +12,15 @@ const TarjetaCredito = () => {
         </div>
         <div className='tr'>
           <div>
-          <p className='fondo font-bignoodle'>Tarjeta de Credito</p>
-          <h1 className='font-bignoodle'>Tarjeta de Credito</h1>
+          <p className='fondo font-bignoodle'>Tarjeta de Débito</p>
+          <h1 className='font-bignoodle'>Tarjeta de Débito</h1>
           </div>
         </div>
         <div className='cbubox font-bignoodle'>
           <div className='overlay'></div>
           <h2 className='h2'>Mes musculación Monteros</h2>
           <p className='texttr'>Ingresa al siguiente link e ingresa los datos de tu tarjeta:</p>
-          <a href="/#" style={{position: 'relative', fontSize: '25px'}} >link</a>
+          <a href="https://mobbex.com/p/commerce/item/f4ZSdCqgS" style={{position: 'relative', fontSize: '25px'}} >Realizar pago</a>
           <p className='texttr'>y enviá tu comprobante a nuestro whatsapp</p>
           <p className='textnum'><span className='num'>3863564651</span> <a href='https://api.whatsapp.com/send?phone=543863564651' className='click'>o hacé click aquí</a></p>
           <p className='abonar'>Total a abonar: $19.000</p>
@@ -35,4 +31,4 @@ const TarjetaCredito = () => {
   );
 }
 
-export default TarjetaCredito;
+export default TarjetaDedito;
