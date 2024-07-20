@@ -1,26 +1,26 @@
-// src/PrincipalMusculacion.js
-import React from 'react';
-import '../index.css';
-import Logo1 from '../Images/logo1.png';
-import Tarjeta from '../Images/tarjetacredito.png';
-import Transferencia from '../Images/transferencia.png';
-import Efectivo from '../Images/efectivo.png';
-import Promociones from '../Components/Promociones';
-import { useNavigate } from 'react-router-dom';
+// src/PrincipalGrupales.js
 
+import React from 'react';
+import '../../index.css';
+import Logo1 from '../../Images/logo1.png';
+import Tarjeta from '../../Images/tarjetacredito.png';
+import Transferencia from '../../Images/transferencia.png';
+import Efectivo from '../../Images/efectivo.png';
+import Promociones from '../../Components/Promociones';
+import { useNavigate } from 'react-router-dom';
 const PrincipalGrupales = () => {
   const navigate = useNavigate();
 
   const handleTransferenciaClick = () => {
-    navigate('/grupales/transferencia', { replace: false });
+    navigate('/concepcion/grupales/transferencia', { replace: false });
   };
 
   const handleEfectivoClick = () => {
-    navigate('/grupales/efectivo', { replace: false });
+    navigate('/concepcion/grupales/efectivo', { replace: false });
   };
 
   const handleDebitoClick = () => {
-    navigate('/grupales/tarjeta-debito', { replace: false });
+    navigate('/concepcion/grupales/tarjeta-debito', { replace: false });
   };
 
   return (
@@ -31,11 +31,11 @@ const PrincipalGrupales = () => {
       </h1>
       <div className="plan-info">
         <p className="plan-text">
-          Estás por abonar tu plan: grupales monteros
+          Estás por abonar tu plan: grupales Concepción
         </p>
       </div>
       <div className="plan-info">
-        <p className="plan-text">Monto a abornar: $16.600</p>
+        <p className="plan-text">Monto a abornar: $20.500</p>
       </div>
 
       <div className="payment-info" style={{ cursor: 'not-allowed' }}>

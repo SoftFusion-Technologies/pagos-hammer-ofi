@@ -1,26 +1,26 @@
-// src/PrincipalMusculacion.js
+// src/PrincipalGrupales.js
+
 import React from 'react';
-import '../index.css';
-import Logo1 from '../Images/logo1.png';
-import Tarjeta from '../Images/tarjetacredito.png';
-import Transferencia from '../Images/transferencia.png';
-import Efectivo from '../Images/efectivo.png';
-import Promociones from '../Components/Promociones';
+import '../../index.css';
+import Logo1 from '../../Images/logo1.png';
+import Tarjeta from '../../Images/tarjetacredito.png';
+import Transferencia from '../../Images/transferencia.png';
+import Efectivo from '../../Images/efectivo.png';
+import Promociones from '../../Components/Promociones';
 import { useNavigate } from 'react-router-dom';
- 
-const PrincipalMusculacion = () => {
+const PrincipalGrupales = () => {
   const navigate = useNavigate();
 
   const handleTransferenciaClick = () => {
-    navigate('/musculacion/transferencia', { replace: false });
+    navigate('/monteros/grupales/transferencia', { replace: false });
   };
 
   const handleEfectivoClick = () => {
-    navigate('/musculacion/efectivo', { replace: false });
+    navigate('/monteros/grupales/efectivo', { replace: false });
   };
 
   const handleDebitoClick = () => {
-    navigate('/musculacion/tarjeta-debito', { replace: false });
+    navigate('/monteros/grupales/tarjeta-debito', { replace: false });
   };
 
   return (
@@ -31,18 +31,23 @@ const PrincipalMusculacion = () => {
       </h1>
       <div className="plan-info">
         <p className="plan-text">
-          Estás por abonar tu plan: mes musculación monteros
+          Estás por abonar tu plan: grupales monteros
         </p>
       </div>
       <div className="plan-info">
-        <p className="plan-text">
-        Monto a abornar: $19.000
-        </p>
+        <p className="plan-text">Monto a abornar: $16.600</p>
       </div>
 
-      <div className="payment-info" style={{cursor: "not-allowed"}}>
-        <img src={Tarjeta} alt="Tarjeta de crédito" className="card-icon" style={{backgroundColor: "#C3C3C3"}} />
-        <p className="payment-text" style={{backgroundColor: "#C3C3C3"}}>Tarjeta de crédito</p>
+      <div className="payment-info" style={{ cursor: 'not-allowed' }}>
+        <img
+          src={Tarjeta}
+          alt="Tarjeta de crédito"
+          className="card-icon"
+          style={{ backgroundColor: '#C3C3C3' }}
+        />
+        <p className="payment-text" style={{ backgroundColor: '#C3C3C3' }}>
+          Tarjeta de crédito
+        </p>
       </div>
 
       <div className="payment-info" onClick={handleDebitoClick}>
@@ -57,11 +62,13 @@ const PrincipalMusculacion = () => {
 
       <div className="payment-info" onClick={handleEfectivoClick}>
         <img src={Efectivo} alt="Efectivo" className="card-icon" />
-        <p className="payment-text" title='¡5% off! 🤩'>Efectivo</p>
+        <p className="payment-text" title="¡5% off! 🤩">
+          Efectivo
+        </p>
       </div>
       <Promociones></Promociones>
     </div>
   );
 };
 
-export default PrincipalMusculacion;
+export default PrincipalGrupales;
