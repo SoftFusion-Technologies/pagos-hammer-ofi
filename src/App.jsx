@@ -25,6 +25,13 @@ import EfectivoPL from './Components/PPaseLibre/Efectivo.jsx';
 import TarjetaDebitoPL from './Components/PPaseLibre/TarjetaDebito.jsx';
 // TERCER APP / PASE LIBRE - FINAL - MONTEROS 
 
+// CUARTA APP / TRIMESTRALES - INICIO - MONTEROS  
+import PrincipalTrimestrales from './Pages/Monteros/PrincipalTrimestrales.jsx';
+import TransferenciaT from './Components/Trimestrales/Transferencia';
+import EfectivoT from './Components/Trimestrales/Efectivo.jsx';
+import TarjetaDebitoT from './Components/Trimestrales/TarjetaDebito.jsx';
+// CUARTA APP / TRIMESTRALES - FINAL - MONTEROS  
+
 
 // PRIMER APP / MUSCULACION - INICIO - Concepcion  
 import PrincipalMusculacionConcep from './Pages/Concepcion/PrincipalMusculacion.jsx';
@@ -94,6 +101,18 @@ function App() {
           <Route path="/monteros/paselibre/efectivo" element={<EfectivoPL />} />
           {/* TERCER APP / PASE LIBRE - FINAL - MONTEROS  */}
 
+          {/* CUARTA APP / TRIMESTRALES - INICIO - MONTEROS  */}
+          <Route path="/monteros/trimestrales" element={<PrincipalTrimestrales />} />
+          <Route
+            path="/monteros/trimestrales/tarjeta-debito"
+            element={<TarjetaDebitoT />}
+          />
+          <Route
+            path="/monteros/trimestrales/transferencia"
+            element={<TransferenciaT />}
+          />
+          <Route path="/monteros/trimestrales/efectivo" element={<EfectivoT />} />
+          {/* CUARTA APP / TRIMESTRALES - FINAL - MONTEROS  */}
           {/* PRIMER APP / MUSCULACION - INICIO - concepcion */}
           <Route path="/concepcion" element={<PrincipalMusculacionConcep />} />
           <Route
