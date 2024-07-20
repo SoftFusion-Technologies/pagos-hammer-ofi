@@ -1,11 +1,16 @@
 import React from 'react';
-import '../styles/BackButton.css'; 
+import { useNavigate } from 'react-router-dom';
+import '../styles/BackButton.css';
 
 const BackButton = () => {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate(-1); // Navega a la ruta anterior en el historial
+  };
 
   return (
-    <a href="/" className='link'>
-    <button className="back-button">
+    <button className="back-button" onClick={handleBack}>
       <svg
         className="back-button-icon"
         fill="none"
@@ -20,9 +25,8 @@ const BackButton = () => {
           d="M15 19l-7-7 7-7"
         />
       </svg>
-      <p className='btn'>Volver</p>
+      <p className="btn">Volver</p>
     </button>
-    </a>
   );
 };
 

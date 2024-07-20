@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/transferencia.css';
-import copy from '../Images/copy.png';
-import Promociones from './Promociones';
-import BackButton from './Arrow';
+import '../../styles/transferencia.css';
+import copy from '../../Images/copy.png';
+import Promociones from '../Promociones';
+import BackButton from '../Arrow';
 
 const Transferencia = () => {
   const handleCopyClick = () => {
@@ -35,7 +35,7 @@ const Transferencia = () => {
             <img className='copy-icon' src={copy} alt="Copy Icon" onClick={handleCopyClick} />
           </div>
           <p className='texttr'>y enviá tu comprobante a nuestro whatsapp</p>
-          <p className='textnum'><span className='num'>3863564651</span> <a href='https://api.whatsapp.com/send?phone=543863564651' className='click'>o hacé click aquí</a></p>
+          <p className='textnum'><span className='num'>3863564651</span> <a href='https://api.whatsapp.com/send?phone=543863564651' target='_blank' className='click'>o hacé click aquí</a></p>
           <p className='abonar'>Total a abonar: $19.000</p>
         </div>
         <Promociones />

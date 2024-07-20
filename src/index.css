@@ -82,6 +82,7 @@ html, body, #root {
   align-items: center;
   transition: transform 0.3s ease-out; /* Transición suave para transformaciones */
   cursor: pointer;
+  margin-left : -5rem;
 }
 
 .payment-info:hover {
@@ -129,6 +130,7 @@ html, body, #root {
   .plan-text, .payment-text {
     font-size: 1.5rem;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -144,6 +146,8 @@ html, body, #root {
 
   .payment-info {
     flex-direction: column;
+    margin-left: 1rem;
+
   }
 
   .plan-text, .payment-text {

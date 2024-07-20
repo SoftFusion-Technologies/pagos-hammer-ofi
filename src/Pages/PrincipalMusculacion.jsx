@@ -5,22 +5,22 @@ import Logo1 from '../Images/logo1.png';
 import Tarjeta from '../Images/tarjetacredito.png';
 import Transferencia from '../Images/transferencia.png';
 import Efectivo from '../Images/efectivo.png';
-import Promociones from './Promociones';
+import Promociones from '../Components/Promociones';
 import { useNavigate } from 'react-router-dom';
  
 const PrincipalMusculacion = () => {
   const navigate = useNavigate();
 
   const handleTransferenciaClick = () => {
-    navigate('/transferencia', { replace: false });
+    navigate('/musculacion/transferencia', { replace: false });
   };
 
   const handleEfectivoClick = () => {
-    navigate('/efectivo', { replace: false });
+    navigate('/musculacion/efectivo', { replace: false });
   };
 
   const handleDebitoClick = () => {
-    navigate('/tarjeta-debito', { replace: false });
+    navigate('/musculacion/tarjeta-debito', { replace: false });
   };
 
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/efectivo.css'
-import Promociones from './Promociones'
-import BackButton from './Arrow';
+import '../../styles/efectivo.css'
+import Promociones from '../Promociones';
+import BackButton from '../Arrow';
 
 const Efectivo = () => {
   return (
