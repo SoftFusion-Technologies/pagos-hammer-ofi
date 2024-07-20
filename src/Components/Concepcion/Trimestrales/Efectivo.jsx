@@ -1,7 +1,7 @@
-import React from 'react'
-import '../../styles/efectivo.css'
-import Promociones from '../Promociones';
-import BackButton from '../Arrow';
+import React from 'react';
+import '../../../styles/efectivo.css';
+import Promociones from '../../Promociones';
+import BackButton from '../../Arrow';
 
 const Efectivo = () => {
   return (
@@ -22,6 +22,6 @@ const Efectivo = () => {
       <Promociones />
     </div>
   );
-}
+};
 
-export default Efectivo
+export default Efectivo;

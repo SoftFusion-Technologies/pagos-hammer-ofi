@@ -56,6 +56,12 @@ import EfectivoPLConcep from './Components/Concepcion/PPaseLibre/Efectivo.jsx';
 import TarjetaDebitoPLConcep from './Components/Concepcion/PPaseLibre/TarjetaDebito.jsx';
 // TERCER APP / PASE LIBRE - FINAL - Concepcion 
 
+// CUARTA APP / TRIMESTRALES - INICIO - Concepcion  
+import PrincipalTrimestralesConcep from './Pages/Concepcion/PrincipalTrimestrales.jsx';
+import TransferenciaTConcep from './Components/Concepcion/Trimestrales/Transferencia';
+import EfectivoTConcep from './Components/Concepcion/Trimestrales/Efectivo.jsx';
+import TarjetaDebitoTConcep from './Components/Concepcion/Trimestrales/TarjetaDebito.jsx';
+// CUARTA APP / TRIMESTRALES - FINAL - Concepcion  
 function App() {
   return (
     <Router>
@@ -102,7 +108,10 @@ function App() {
           {/* TERCER APP / PASE LIBRE - FINAL - MONTEROS  */}
 
           {/* CUARTA APP / TRIMESTRALES - INICIO - MONTEROS  */}
-          <Route path="/monteros/trimestrales" element={<PrincipalTrimestrales />} />
+          <Route
+            path="/monteros/trimestrales"
+            element={<PrincipalTrimestrales />}
+          />
           <Route
             path="/monteros/trimestrales/tarjeta-debito"
             element={<TarjetaDebitoT />}
@@ -111,8 +120,12 @@ function App() {
             path="/monteros/trimestrales/transferencia"
             element={<TransferenciaT />}
           />
-          <Route path="/monteros/trimestrales/efectivo" element={<EfectivoT />} />
+          <Route
+            path="/monteros/trimestrales/efectivo"
+            element={<EfectivoT />}
+          />
           {/* CUARTA APP / TRIMESTRALES - FINAL - MONTEROS  */}
+
           {/* PRIMER APP / MUSCULACION - INICIO - concepcion */}
           <Route path="/concepcion" element={<PrincipalMusculacionConcep />} />
           <Route
@@ -166,6 +179,25 @@ function App() {
             element={<EfectivoPLConcep />}
           />
           {/* TERCER APP / PASE LIBRE - FINAL - concepcion  */}
+
+          {/* CUARTA APP / TRIMESTRALES - INICIO - concepcion  */}
+          <Route
+            path="/concepcion/trimestrales"
+            element={<PrincipalTrimestralesConcep />}
+          />
+          <Route
+            path="/concepcion/trimestrales/tarjeta-debito"
+            element={<TarjetaDebitoTConcep />}
+          />
+          <Route
+            path="/concepcion/trimestrales/transferencia"
+            element={<TransferenciaTConcep />}
+          />
+          <Route
+            path="/concepcion/trimestrales/efectivo"
+            element={<EfectivoTConcep />}
+          />
+          {/* CUARTA APP / TRIMESTRALES - FINAL - concepcion  */}
         </Routes>
       </div>
     </Router>
