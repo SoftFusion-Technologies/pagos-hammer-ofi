@@ -84,6 +84,14 @@ import TransferenciaSConcep from './Components/Concepcion/Semestrales/Transferen
 import EfectivoSConcep from './Components/Concepcion/Semestrales/Efectivo.jsx';
 import TarjetaDebitoSConcep from './Components/Concepcion/Semestrales/TarjetaDebito.jsx';
 // QUINTA APP / SEMESTRALES  - FINAL - Concepcion  
+
+// SEXTA APP / ANUAL - INICIO - Concepcion  
+import PrincipalAnualConcep from './Pages/Concepcion/PrincipalAnual.jsx';
+import TransferenciaAConcep from './Components/Concepcion/TTAnual/Transferencia';
+import EfectivoAConcep from './Components/Concepcion/TTAnual/Efectivo.jsx';
+import TarjetaDebitoAConcep from './Components/Concepcion/TTAnual/TarjetaDebito.jsx';
+// SEXTA APP / ANUAL  - FINAL - Concepcion  
+
 function App() {
   return (
     <Router>
@@ -167,11 +175,8 @@ function App() {
           />
           {/* QUINTA APP / SEMESTRALES - FINAL - MONTEROS  */}
 
-          {/* SECTA APP / ANUAL - INICIO - MONTEROS  */}
-          <Route
-            path="/monteros/anual"
-            element={<PrincipalAnual />}
-          />
+          {/* SEXTA APP / ANUAL - INICIO - MONTEROS  */}
+          <Route path="/monteros/anual" element={<PrincipalAnual />} />
           <Route
             path="/monteros/anual/tarjeta-debito"
             element={<TarjetaDebitoA />}
@@ -180,11 +185,8 @@ function App() {
             path="/monteros/anual/transferencia"
             element={<TransferenciaA />}
           />
-          <Route
-            path="/monteros/anual/efectivo"
-            element={<EfectivoA />}
-          />
-          {/* SECTA APP / ANUAL - FINAL - MONTEROS  */}
+          <Route path="/monteros/anual/efectivo" element={<EfectivoA />} />
+          {/* SEXTA APP / ANUAL - FINAL - MONTEROS  */}
 
           {/* PRIMER APP / MUSCULACION - INICIO - concepcion */}
           <Route path="/concepcion" element={<PrincipalMusculacionConcep />} />
@@ -277,6 +279,19 @@ function App() {
             element={<EfectivoSConcep />}
           />
           {/* QUINTA APP / SEMESTRALES - FINAL - CONCEPCION  */}
+
+          {/* SEXTA APP / ANUAL - INICIO - CONCEPCION  */}
+          <Route path="/concepcion/anual" element={<PrincipalAnualConcep />} />
+          <Route
+            path="/concepcion/anual/tarjeta-debito"
+            element={<TarjetaDebitoAConcep />}
+          />
+          <Route
+            path="/concepcion/anual/transferencia"
+            element={<TransferenciaAConcep />}
+          />
+          <Route path="/concepcion/anual/efectivo" element={<EfectivoAConcep />} />
+          {/* SEXTA APP / ANUAL - FINAL - CONCEPCION  */}
         </Routes>
       </div>
     </Router>
