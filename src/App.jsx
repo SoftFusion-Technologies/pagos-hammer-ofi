@@ -67,7 +67,15 @@ import PrincipalTrimestralesConcep from './Pages/Concepcion/PrincipalTrimestrale
 import TransferenciaTConcep from './Components/Concepcion/Trimestrales/Transferencia';
 import EfectivoTConcep from './Components/Concepcion/Trimestrales/Efectivo.jsx';
 import TarjetaDebitoTConcep from './Components/Concepcion/Trimestrales/TarjetaDebito.jsx';
-// CUARTA APP / TRIMESTRALES - FINAL - Concepcion  
+// CUARTA APP / TRIMESTRALES - FINAL - Concepcion
+
+
+// QUINTA APP / SEMESTRALES - INICIO - Concepcion  
+import PrincipalSemestralesConcep from './Pages/Concepcion/PrincipalSemestrales.jsx';
+import TransferenciaSConcep from './Components/Concepcion/Semestrales/Transferencia';
+import EfectivoSConcep from './Components/Concepcion/Semestrales/Efectivo.jsx';
+import TarjetaDebitoSConcep from './Components/Concepcion/Semestrales/TarjetaDebito.jsx';
+// QUINTA APP / SEMESTRALES  - FINAL - Concepcion  
 function App() {
   return (
     <Router>
@@ -223,6 +231,25 @@ function App() {
             element={<EfectivoTConcep />}
           />
           {/* CUARTA APP / TRIMESTRALES - FINAL - concepcion  */}
+
+          {/* QUINTA APP / SEMESTRALES - INICIO - CONCEPCION  */}
+          <Route
+            path="/concepcion/semestrales"
+            element={<PrincipalSemestralesConcep />}
+          />
+          <Route
+            path="/concepcion/semestrales/tarjeta-debito"
+            element={<TarjetaDebitoSConcep />}
+          />
+          <Route
+            path="/concepcion/semestrales/transferencia"
+            element={<TransferenciaSConcep />}
+          />
+          <Route
+            path="/concepcion/semestrales/efectivo"
+            element={<EfectivoSConcep />}
+          />
+          {/* QUINTA APP / SEMESTRALES - FINAL - CONCEPCION  */}
         </Routes>
       </div>
     </Router>
