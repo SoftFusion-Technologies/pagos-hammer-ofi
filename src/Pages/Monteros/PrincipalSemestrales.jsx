@@ -22,6 +22,10 @@ const PrincipalTrimestrales = () => {
     navigate('/monteros/semestrales/tarjeta-debito', { replace: false });
   };
 
+  const handleSemestralClick = () => {
+    navigate('/monteros/semestrales/cuotas', { state: { cuotas1: true, cuotas3: true, cuotas6: true, cuotas12: false } }); //cantidad de cuotas habilitadas
+  };
+
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -47,7 +51,7 @@ const PrincipalTrimestrales = () => {
           className="card-icon"
           //  se elimina el bloqueo de la tarjeta   style={{ backgroundColor: '#C3C3C3' }}
         />
-        <p className="payment-text">Tarjeta de crédito</p>
+        <p className="payment-text" onClick={handleSemestralClick}>Tarjeta de crédito</p>
       </div>
 
       <div className="payment-info" onClick={handleDebitoClick}>

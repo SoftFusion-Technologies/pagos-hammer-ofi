@@ -4,7 +4,7 @@ import '../../styles/transferencia.css';
 import Promociones from '../Promociones';
 import BackButton from '../Arrow';
 
-const TarjetaDebito = () => {
+const TarjetaCredito = () => {
   const location = useLocation();
   const { cuotas } = location.state || {}; //variable que guarda la cantidad de cuotas que se seleccionó
 
@@ -52,4 +52,4 @@ const TarjetaDebito = () => {
   );
 }
 
-export default TarjetaDebito;
+export default TarjetaCredito;
