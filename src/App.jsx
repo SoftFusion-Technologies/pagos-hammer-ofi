@@ -75,6 +75,7 @@ import PrincipalTrimestralesConcep from './Pages/Concepcion/PrincipalTrimestrale
 import TransferenciaTConcep from './Components/Concepcion/Trimestrales/Transferencia';
 import EfectivoTConcep from './Components/Concepcion/Trimestrales/Efectivo.jsx';
 import TarjetaDebitoTConcep from './Components/Concepcion/Trimestrales/TarjetaDebito.jsx';
+import TarjetaCreditoConcep from './Components/Concepcion/Trimestrales/TarjetaCredito.jsx'
 // CUARTA APP / TRIMESTRALES - FINAL - Concepcion
 
 
@@ -83,6 +84,8 @@ import PrincipalSemestralesConcep from './Pages/Concepcion/PrincipalSemestrales.
 import TransferenciaSConcep from './Components/Concepcion/Semestrales/Transferencia';
 import EfectivoSConcep from './Components/Concepcion/Semestrales/Efectivo.jsx';
 import TarjetaDebitoSConcep from './Components/Concepcion/Semestrales/TarjetaDebito.jsx';
+import TarjetaCreditoSConcep from './Components/Concepcion/Semestrales/TarjetaCredito.jsx'
+import CuotasSemestral from './Components/Concepcion/Semestrales/CuotasSemestral.jsx';
 // QUINTA APP / SEMESTRALES  - FINAL - Concepcion  
 
 // SEXTA APP / ANUAL - INICIO - Concepcion  
@@ -96,6 +99,7 @@ import CuotasAnual from './Components/TTAnual/CuotasAnual.jsx'
 import TarjetaCredito from './Components/Trimestrales/TarjetaCredito.jsx';
 import TarjetaCreditoS from './Components/Semestrales/TarjetaCredito.jsx';
 import TarjetaCreditoA from './Components/TTAnual/TarjetaCredito.jsx';
+import TarjetaCreditoAConcep from './Components/Concepcion/TTAnual/TarjetaCredito.jsx';
 // SEXTA APP / ANUAL  - FINAL - Concepcion  
 
 function App() {
@@ -278,6 +282,14 @@ function App() {
             element={<PrincipalTrimestralesConcep />}
           />
           <Route
+            path="/concepcion/trimestrales/cuotas"
+            element={<CuotasTrimestral />}
+          />
+          <Route
+            path="/concepcion/trimestrales/cuotas/tarjeta-credito"
+            element={<TarjetaCreditoConcep />}
+          />
+          <Route
             path="/concepcion/trimestrales/tarjeta-debito"
             element={<TarjetaDebitoTConcep />}
           />
@@ -295,6 +307,14 @@ function App() {
           <Route
             path="/concepcion/semestrales"
             element={<PrincipalSemestralesConcep />}
+          />
+          <Route
+            path="/concepcion/semestrales/cuotas"
+            element={<CuotasSemestral />}
+          />
+          <Route
+            path="/concepcion/semestrales/cuotas/tarjeta-credito"
+            element={<TarjetaCreditoSConcep />}
           />
           <Route
             path="/concepcion/semestrales/tarjeta-debito"
@@ -315,6 +335,14 @@ function App() {
           <Route
             path="/concepcion/anual/tarjeta-debito"
             element={<TarjetaDebitoAConcep />}
+          />
+          <Route
+            path="/concepcion/anual/cuotas"
+            element={<CuotasSemestral />}
+          />
+          <Route
+            path="/concepcion/anual/cuotas/tarjeta-credito"
+            element={<TarjetaCreditoAConcep />}
           />
           <Route
             path="/concepcion/anual/transferencia"

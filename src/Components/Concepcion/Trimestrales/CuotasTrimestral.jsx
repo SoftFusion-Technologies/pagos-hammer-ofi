@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import '../../styles/cuotas.css';
 import BackButton from '../Arrow';
 
-const CuotasSemestral = () => {
+const CuotasTrimestral = () => {
   const [cuotas, setCuotas] = useState('');
   const navigate = useNavigate();
   const location = useLocation();
@@ -20,7 +20,7 @@ const CuotasSemestral = () => {
 
   const handleSelection = (cuotas) => {
     setCuotas(cuotas);
-    navigate('/monteros/trimestrales/cuotas/tarjeta-credito', { state: { cuotas: cuotas } });
+    navigate('/concepcion/trimestrales/cuotas/tarjeta-credito', { state: { cuotas: cuotas } });
   };
 
   return (
@@ -46,4 +46,4 @@ const CuotasSemestral = () => {
   );
 };
 
-export default CuotasSemestral;
+export default CuotasTrimestral;
