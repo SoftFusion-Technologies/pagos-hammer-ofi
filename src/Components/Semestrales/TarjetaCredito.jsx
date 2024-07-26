@@ -22,12 +22,12 @@ const TarjetaCredito = () => {
         </div>
         <div className="cbubox font-bignoodle">
           <div className="overlay"></div>
-          <h2 className="h2">Trimestrales Monteros</h2>
+          <h2 className="h2">Semestral Monteros</h2>
           <p className="texttr">
             Ingresa al siguiente link e ingresa los datos de tu tarjeta:
           </p>
           <a
-            href="https://mobbex.com/p/commerce/item/GF98Xb87E/"
+            href="https://mobbex.com/p/commerce/item/u1mZZ8fZF/"
             target="_blank"
             style={{ position: 'relative', fontSize: '25px' }}
           >
@@ -44,7 +44,7 @@ const TarjetaCredito = () => {
               o hacé click aquí
             </a>
           </p>
-          <p className="abonar">Total a abonar: $57.000</p>
+          <p className="abonar">Total a abonar: $114.000</p>
         </div>
         <Promociones />
       </div>

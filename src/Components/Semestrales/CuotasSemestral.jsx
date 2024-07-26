@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import '../../styles/cuotas.css';
 import BackButton from '../Arrow';
 
-const CuotasTrimestral = () => {
+const CuotasSemestral = () => {
   const [cuotas, setCuotas] = useState('');
   const navigate = useNavigate();
   const location = useLocation();
@@ -46,4 +46,4 @@ const CuotasTrimestral = () => {
   );
 };
 
-export default CuotasTrimestral;
+export default CuotasSemestral;

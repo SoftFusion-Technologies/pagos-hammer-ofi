@@ -94,6 +94,8 @@ import CuotasTrimestral from './Components/Trimestrales/CuotasTrimestral.jsx';
 import CoutasSemestral from './Components/Semestrales/CuotasSemestral.jsx'
 import CuotasAnual from './Components/TTAnual/CuotasAnual.jsx'
 import TarjetaCredito from './Components/Trimestrales/TarjetaCredito.jsx';
+import TarjetaCreditoS from './Components/Semestrales/TarjetaCredito.jsx';
+import TarjetaCreditoA from './Components/TTAnual/TarjetaCredito.jsx';
 // SEXTA APP / ANUAL  - FINAL - Concepcion  
 
 function App() {
@@ -179,7 +181,7 @@ function App() {
           />
           <Route
             path="/monteros/semestrales/cuotas/tarjeta-credito"
-            element={<TarjetaCredito />}
+            element={<TarjetaCreditoS />}
           />
           <Route
             path="/monteros/semestrales/tarjeta-debito"
@@ -203,7 +205,7 @@ function App() {
           />
           <Route
             path="/monteros/anual/cuotas/tarjeta-credito"
-            element={<TarjetaCredito />}
+            element={<TarjetaCreditoA />}
           />
           <Route
             path="/monteros/anual/tarjeta-debito"

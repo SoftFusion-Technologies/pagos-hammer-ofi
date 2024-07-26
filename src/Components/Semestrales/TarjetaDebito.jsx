@@ -18,7 +18,7 @@ const TarjetaDebito = () => {
         </div>
         <div className="cbubox font-bignoodle">
           <div className="overlay"></div>
-          <h2 className="h2">Semestrales Monteros</h2>
+          <h2 className="h2">Semestral Monteros</h2>
           <p className="texttr">
             Ingresa al siguiente link e ingresa los datos de tu tarjeta:
           </p>
