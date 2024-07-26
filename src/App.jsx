@@ -27,9 +27,11 @@ import TarjetaDebitoPL from './Components/PPaseLibre/TarjetaDebito.jsx';
 
 // CUARTA APP / TRIMESTRALES - INICIO - MONTEROS  
 import PrincipalTrimestrales from './Pages/Monteros/PrincipalTrimestrales.jsx';
+import CuotasTrimestral from './Components/Trimestrales/CuotasTrimestral.jsx';
 import TransferenciaT from './Components/Trimestrales/Transferencia';
 import EfectivoT from './Components/Trimestrales/Efectivo.jsx';
 import TarjetaDebitoT from './Components/Trimestrales/TarjetaDebito.jsx';
+import TarjetaCredito from './Components/Trimestrales/TarjetaCredito.jsx';
 // CUARTA APP / TRIMESTRALES - FINAL - MONTEROS  
 
 // QUINTA APP / SEMESTRALES - INICIO - MONTEROS  
@@ -37,6 +39,8 @@ import PrincipalSemestrales from './Pages/Monteros/PrincipalSemestrales.jsx';
 import TransferenciaS from './Components/Semestrales/Transferencia';
 import EfectivoS from './Components/Semestrales/Efectivo.jsx';
 import TarjetaDebitoS from './Components/Semestrales/TarjetaDebito.jsx';
+import TarjetaCreditoS from './Components/Semestrales/TarjetaCredito.jsx';
+import CuotasSemestral from './Components/Semestrales/CuotasSemestral.jsx'
 // QUINTA APP / SEMESTRALES  - FINAL - MONTEROS  
 
 
@@ -45,6 +49,9 @@ import PrincipalAnual from './Pages/Monteros/PrincipalAnual.jsx';
 import TransferenciaA from './Components/TTAnual/Transferencia';
 import EfectivoA from './Components/TTAnual/Efectivo.jsx';
 import TarjetaDebitoA from './Components/TTAnual/TarjetaDebito.jsx';
+import TarjetaCreditoA from './Components/TTAnual/TarjetaCredito.jsx';
+import CuotasAnual from './Components/TTAnual/CuotasAnual.jsx';
+
 // SEXTA APP / ANUAL  - FINAL - MONTEROS  
 
 // PRIMER APP / MUSCULACION - INICIO - Concepcion  
@@ -75,7 +82,8 @@ import PrincipalTrimestralesConcep from './Pages/Concepcion/PrincipalTrimestrale
 import TransferenciaTConcep from './Components/Concepcion/Trimestrales/Transferencia';
 import EfectivoTConcep from './Components/Concepcion/Trimestrales/Efectivo.jsx';
 import TarjetaDebitoTConcep from './Components/Concepcion/Trimestrales/TarjetaDebito.jsx';
-import TarjetaCreditoConcep from './Components/Concepcion/Trimestrales/TarjetaCredito.jsx'
+import TarjetaCreditoConcep from './Components/Concepcion/Trimestrales/TarjetaCredito.jsx';
+import CuotasTrimestralConcep from './Components/Concepcion/Trimestrales/CuotasTrimestral.jsx';
 // CUARTA APP / TRIMESTRALES - FINAL - Concepcion
 
 
@@ -85,7 +93,7 @@ import TransferenciaSConcep from './Components/Concepcion/Semestrales/Transferen
 import EfectivoSConcep from './Components/Concepcion/Semestrales/Efectivo.jsx';
 import TarjetaDebitoSConcep from './Components/Concepcion/Semestrales/TarjetaDebito.jsx';
 import TarjetaCreditoSConcep from './Components/Concepcion/Semestrales/TarjetaCredito.jsx'
-import CuotasSemestral from './Components/Concepcion/Semestrales/CuotasSemestral.jsx';
+import CuotasSemestralConcep from './Components/Concepcion/Semestrales/CuotasSemestral.jsx';
 // QUINTA APP / SEMESTRALES  - FINAL - Concepcion  
 
 // SEXTA APP / ANUAL - INICIO - Concepcion  
@@ -93,12 +101,7 @@ import PrincipalAnualConcep from './Pages/Concepcion/PrincipalAnual.jsx';
 import TransferenciaAConcep from './Components/Concepcion/TTAnual/Transferencia';
 import EfectivoAConcep from './Components/Concepcion/TTAnual/Efectivo.jsx';
 import TarjetaDebitoAConcep from './Components/Concepcion/TTAnual/TarjetaDebito.jsx';
-import CuotasTrimestral from './Components/Trimestrales/CuotasTrimestral.jsx';
-import CoutasSemestral from './Components/Semestrales/CuotasSemestral.jsx'
-import CuotasAnual from './Components/TTAnual/CuotasAnual.jsx'
-import TarjetaCredito from './Components/Trimestrales/TarjetaCredito.jsx';
-import TarjetaCreditoS from './Components/Semestrales/TarjetaCredito.jsx';
-import TarjetaCreditoA from './Components/TTAnual/TarjetaCredito.jsx';
+import CoutasAnualConcep from './Components/Concepcion/TTAnual/CuotasAnual.jsx'
 import TarjetaCreditoAConcep from './Components/Concepcion/TTAnual/TarjetaCredito.jsx';
 // SEXTA APP / ANUAL  - FINAL - Concepcion  
 
@@ -181,7 +184,7 @@ function App() {
           />
           <Route
             path="/monteros/semestrales/cuotas"
-            element={<CoutasSemestral />}
+            element={<CuotasSemestral />}
           />
           <Route
             path="/monteros/semestrales/cuotas/tarjeta-credito"
@@ -203,10 +206,7 @@ function App() {
 
           {/* SEXTA APP / ANUAL - INICIO - MONTEROS  */}
           <Route path="/monteros/anual" element={<PrincipalAnual />} />
-          <Route
-            path="/monteros/anual/cuotas"
-            element={<CuotasAnual />}
-          />
+          <Route path="/monteros/anual/cuotas" element={<CuotasAnual />} />
           <Route
             path="/monteros/anual/cuotas/tarjeta-credito"
             element={<TarjetaCreditoA />}
@@ -283,7 +283,7 @@ function App() {
           />
           <Route
             path="/concepcion/trimestrales/cuotas"
-            element={<CuotasTrimestral />}
+            element={<CuotasTrimestralConcep />}
           />
           <Route
             path="/concepcion/trimestrales/cuotas/tarjeta-credito"
@@ -310,7 +310,7 @@ function App() {
           />
           <Route
             path="/concepcion/semestrales/cuotas"
-            element={<CuotasSemestral />}
+            element={<CuotasSemestralConcep />}
           />
           <Route
             path="/concepcion/semestrales/cuotas/tarjeta-credito"
@@ -338,7 +338,7 @@ function App() {
           />
           <Route
             path="/concepcion/anual/cuotas"
-            element={<CuotasSemestral />}
+            element={<CoutasAnualConcep />}
           />
           <Route
             path="/concepcion/anual/cuotas/tarjeta-credito"
@@ -348,7 +348,10 @@ function App() {
             path="/concepcion/anual/transferencia"
             element={<TransferenciaAConcep />}
           />
-          <Route path="/concepcion/anual/efectivo" element={<EfectivoAConcep />} />
+          <Route
+            path="/concepcion/anual/efectivo"
+            element={<EfectivoAConcep />}
+          />
           {/* SEXTA APP / ANUAL - FINAL - CONCEPCION  */}
         </Routes>
       </div>

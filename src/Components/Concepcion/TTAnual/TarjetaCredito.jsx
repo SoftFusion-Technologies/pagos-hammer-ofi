@@ -27,7 +27,7 @@ const TarjetaCredito = () => {
             Ingresa al siguiente link e ingresa los datos de tu tarjeta:
           </p>
           <a
-            href="https://mobbex.com/p/commerce/item/GF98Xb87E/"
+            href="https://mobbex.com/p/commerce/item/yW0MFuYWD/"
             target="_blank"
             style={{ position: 'relative', fontSize: '25px' }}
           >
