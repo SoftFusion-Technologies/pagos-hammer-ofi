@@ -28,7 +28,7 @@ const Transferencia = () => {
         </div>
         <div className="cbubox font-bignoodle">
           <div className="overlay"></div>
-          <h2 className="h2">Semestrales Monteros</h2>
+          <h2 className="h2">Plan Semestrales Monteros</h2>
           <p className="texttr">REALIZÁ TUS TRANSFERENCIAS AL SIGUIENTE CBU</p>
           <div className="cbu-container">
             <p className="cbutext">0000003100078710747645</p>
