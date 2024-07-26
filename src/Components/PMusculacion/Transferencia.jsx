@@ -34,7 +34,7 @@ const Transferencia = () => {
             <p className='cbutext'>0000003100078710747645</p>
             <img className='copy-icon' src={copy} alt="Copy Icon" onClick={handleCopyClick} />
           </div>
-          <p className='texttr'>y enviá tu comprobante a nuestro whatsapp</p>
+          <p style={{fontSize:"18px"}}>Para poder gestionar tu pago no te olvides de descargar tu factura y enviarla al siguiente numero</p>
           <p className='textnum'><span className='num'>3863564651</span> <a href='https://api.whatsapp.com/send?phone=543863564651' target='_blank' className='click'>o hacé click aquí</a></p>
           <p className='abonar'>Total a abonar: $19.000</p>
         </div>
