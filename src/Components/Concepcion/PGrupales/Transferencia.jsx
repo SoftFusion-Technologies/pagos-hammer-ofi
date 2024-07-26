@@ -28,7 +28,7 @@ const Transferencia = () => {
         </div>
         <div className="cbubox font-bignoodle">
           <div className="overlay"></div>
-          <h2 className="h2">Grupales Concepción</h2>
+          <h2 className="h2">Plan Grupales Concepción</h2>
           <p className="texttr">REALIZÁ TUS TRANSFERENCIAS AL SIGUIENTE CBU</p>
           <div className="cbu-container">
             <p className="cbutext">0000003100078710747645</p>
@@ -39,7 +39,10 @@ const Transferencia = () => {
               onClick={handleCopyClick}
             />
           </div>
-          <p className="texttr">y enviá tu comprobante a nuestro whatsapp</p>
+          <p className="texttr">
+            Para poder gestionar tu pago no te olvides de descargar tu factura y
+            enviarla al siguiente número
+          </p>{' '}
           <p className="textnum">
             <span className="num">3865855100</span>{' '}
             <a

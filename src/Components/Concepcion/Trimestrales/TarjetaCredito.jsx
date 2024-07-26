@@ -22,7 +22,7 @@ const TarjetaCredito = () => {
         </div>
         <div className="cbubox font-bignoodle">
           <div className="overlay"></div>
-          <h2 className="h2">Trimestral Concepción</h2>
+          <h2 className="h2">Plan Trimestral Concepción</h2>
           <p className="texttr">
             Ingresa al siguiente link e ingresa los datos de tu tarjeta:
           </p>
