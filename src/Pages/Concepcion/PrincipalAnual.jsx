@@ -22,6 +22,10 @@ const PrincipalAnual = () => {
     navigate('/concepcion/anual/tarjeta-debito', { replace: false });
   };
 
+  const handleAnualClick = () => {
+    navigate('/concepcion/anual/cuotas', { state: { cuotas1: true, cuotas3: true, cuotas6: true, cuotas12: true } }); //cantidad de cuotas habilitadas
+  };
+
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -47,7 +51,7 @@ const PrincipalAnual = () => {
           className="card-icon"
           //  se elimina el bloqueo de la tarjeta   style={{ backgroundColor: '#C3C3C3' }}
         />
-        <p className="payment-text">Tarjeta de crédito</p>
+        <p className="payment-text" onClick={handleAnualClick}>Tarjeta de crédito</p>
       </div>
 
       <div className="payment-info" onClick={handleDebitoClick}>
