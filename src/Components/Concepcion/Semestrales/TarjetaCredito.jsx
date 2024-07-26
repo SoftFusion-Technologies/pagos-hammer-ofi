@@ -27,7 +27,7 @@ const TarjetaCredito = () => {
             Ingresa al siguiente link e ingresa los datos de tu tarjeta:
           </p>
           <a
-            href="https://mobbex.com/p/commerce/item/GF98Xb87E/"
+            href="https://mobbex.com/p/commerce/item/~dy2fuB63/"
             target="_blank"
             style={{ position: 'relative', fontSize: '25px' }}
           >
@@ -38,9 +38,9 @@ const TarjetaCredito = () => {
             enviarla al siguiente número
           </p>{' '}
           <p className="textnum">
-            <span className="num">3863564651</span>{' '}
+            <span className="num">3865855100</span>{' '}
             <a
-              href="https://api.whatsapp.com/send?phone=543863564651"
+              href="https://api.whatsapp.com/send?phone=3865855100"
               className="click"
               target="_blank"
             >

@@ -35,9 +35,9 @@ const TarjetaCredito = () => {
           </a>
           <p className="texttr">y enviá tu comprobante a nuestro whatsapp</p>
           <p className="textnum">
-            <span className="num">3863564651</span>{' '}
+            <span className="num">3865855100</span>{' '}
             <a
-              href="https://api.whatsapp.com/send?phone=543863564651"
+              href="https://api.whatsapp.com/send?phone=543865855100"
               className="click"
               target="_blank"
             >
