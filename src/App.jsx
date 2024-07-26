@@ -90,6 +90,8 @@ import PrincipalAnualConcep from './Pages/Concepcion/PrincipalAnual.jsx';
 import TransferenciaAConcep from './Components/Concepcion/TTAnual/Transferencia';
 import EfectivoAConcep from './Components/Concepcion/TTAnual/Efectivo.jsx';
 import TarjetaDebitoAConcep from './Components/Concepcion/TTAnual/TarjetaDebito.jsx';
+import CuotasTrimestral from './Components/Trimestrales/CuotasTrimestral.jsx';
+import TarjetaCredito from './Components/Trimestrales/TarjetaCredito.jsx';
 // SEXTA APP / ANUAL  - FINAL - Concepcion  
 
 function App() {
@@ -141,6 +143,14 @@ function App() {
           <Route
             path="/monteros/trimestrales"
             element={<PrincipalTrimestrales />}
+          />
+          <Route
+            path="/monteros/trimestrales/cuotas"
+            element={<CuotasTrimestral />}
+          />
+          <Route
+            path="/monteros/trimestrales/cuotas/tarjeta-credito"
+            element={<TarjetaCredito />}
           />
           <Route
             path="/monteros/trimestrales/tarjeta-debito"
