@@ -35,7 +35,7 @@ const PrincipalMusculacion = () => {
       </div>
       <div className="plan-info">
         <p className="plan-text">
-        Monto a abornar: $23.000
+        Monto a abonar: $23.000
         </p>
       </div>
 

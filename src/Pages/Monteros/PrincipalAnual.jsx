@@ -38,7 +38,7 @@ const PrincipalAnual = () => {
         </p>
       </div>
       <div className="plan-info">
-        <p className="plan-text">Monto a abornar: $228.000</p>
+        <p className="plan-text">Monto a abonar: $228.000</p>
       </div>
 
       <div

@@ -35,7 +35,7 @@ const PrincipalMusculacion = () => {
       </div>
       <div className="plan-info">
         <p className="plan-text">
-        Monto a abornar: $19.000
+        Monto a abonar: $19.000
         </p>
       </div>
 
@@ -56,7 +56,7 @@ const PrincipalMusculacion = () => {
 
       <div className="payment-info" onClick={handleEfectivoClick}>
         <img src={Efectivo} alt="Efectivo" className="card-icon" />
-        <p className="payment-text" title='¡5% off! 🤩'>Efectivo</p>
+        <p className="payment-text">Efectivo</p>
       </div>
       <Promociones></Promociones>
     </div>

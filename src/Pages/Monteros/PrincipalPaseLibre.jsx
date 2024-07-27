@@ -35,7 +35,7 @@ const PrincipalPaseLibre = () => {
         </p>
       </div>
       <div className="plan-info">
-        <p className="plan-text">Monto a abornar: $20.500</p>
+        <p className="plan-text">Monto a abonar: $20.500</p>
       </div>
 
       <div className="payment-info" style={{ cursor: 'not-allowed' }}>

@@ -35,7 +35,7 @@ const PrincipalGrupales = () => {
         </p>
       </div>
       <div className="plan-info">
-        <p className="plan-text">Monto a abornar: $16.600</p>
+        <p className="plan-text">Monto a abonar: $16.600</p>
       </div>
 
       <div className="payment-info" style={{ cursor: 'not-allowed' }}>

@@ -34,11 +34,11 @@ const PrincipalTrimestrales = () => {
       </h1>
       <div className="plan-info">
         <p className="plan-text">
-          Estás por abonar tu plan: semestrales monteros
+          Estás por abonar tu plan: semestral monteros
         </p>
       </div>
       <div className="plan-info">
-        <p className="plan-text">Monto a abornar: $114.000</p>
+        <p className="plan-text">Monto a abonar: $114.000</p>
       </div>
 
       <div

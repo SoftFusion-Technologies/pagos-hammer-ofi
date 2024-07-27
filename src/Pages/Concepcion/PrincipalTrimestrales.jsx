@@ -38,7 +38,7 @@ const PrincipalTrimestrales = () => {
         </p>
       </div>
       <div className="plan-info">
-        <p className="plan-text">Monto a abornar: $69.000</p>
+        <p className="plan-text">Monto a abonar: $69.000</p>
       </div>
 
       <div
