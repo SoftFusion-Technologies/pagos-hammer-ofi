@@ -4,11 +4,11 @@ import Semestral from '../Images/semestral.png';
 import Anual from '../Images/anual.png';
 import Macro from '../Images/macro.png';
 
-const Plan = ({ imageSrc, altText, message }) => {
+const Plan = ({ imageSrc, altText, message, num }) => {
   const encodedMessage = encodeURIComponent(
     `Hola! Vengo desde la pagina web, quiero mas info sobre "${message}" :)`
   );
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=543865855100&text=${encodedMessage}`;
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=54${num}&text=${encodedMessage}`;
 
   return (
     <div className="square-div">
@@ -19,7 +19,7 @@ const Plan = ({ imageSrc, altText, message }) => {
   );
 };
 
-const Promociones = () => {
+const Promociones = ({ num }) => {
   return (
     <div>
       <h1 className="message font-bignoodle m2">
@@ -29,21 +29,25 @@ const Promociones = () => {
         imageSrc={Trimestral}
         altText="Promoción Trimestral"
         message="PLAN TRIMESTRAL MONTEROS"
+        num={num}
       />
       <Plan
         imageSrc={Semestral}
         altText="Promoción Semestral"
         message="PLAN SEMESTRAL MONTEROS"
+        num={num}
       />
       <Plan
         imageSrc={Anual}
         altText="Promoción Anual"
         message="PLAN ANUAL MONTEROS"
+        num={num}
       />
       <Plan
         imageSrc={Macro}
         altText="Promoción Macro"
         message="PLAN MACRO MONTEROS"
+        num={num}
       />
     </div>
   );

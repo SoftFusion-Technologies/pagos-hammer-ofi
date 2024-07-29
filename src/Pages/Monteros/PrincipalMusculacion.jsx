@@ -22,6 +22,7 @@ const PrincipalMusculacion = () => {
     navigate('/monteros/musculacion/tarjeta-debito', { replace: false });
   };
 
+  const numMonteros = "3863564651"
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -30,19 +31,19 @@ const PrincipalMusculacion = () => {
       </h1>
       <div className="plan-info">
         <p className="plan-text">
-          Estás por abonar tu plan: mes musculación monteros
+          Estás por abonar $19.000 de: mes musculación monteros
         </p>
       </div>
-      <div className="plan-info">
+      {/* <div className="plan-info">
         <p className="plan-text">
         Monto a abonar: $19.000
         </p>
-      </div>
+      </div> */}
 
-      <div className="payment-info" style={{cursor: "not-allowed"}}>
+      {/* <div className="payment-info" style={{cursor: "not-allowed"}}>
         <img src={Tarjeta} alt="Tarjeta de crédito" className="card-icon" style={{backgroundColor: "#C3C3C3"}} />
         <p className="payment-text" style={{backgroundColor: "#C3C3C3"}}>Tarjeta de crédito</p>
-      </div>
+      </div> */}
 
       <div className="payment-info" onClick={handleDebitoClick}>
         <img src={Tarjeta} alt="Tarjeta de débito" className="card-icon" />
@@ -58,7 +59,7 @@ const PrincipalMusculacion = () => {
         <img src={Efectivo} alt="Efectivo" className="card-icon" />
         <p className="payment-text">Efectivo</p>
       </div>
-      <Promociones></Promociones>
+      <Promociones num={numMonteros}></Promociones>
     </div>
   );
 };

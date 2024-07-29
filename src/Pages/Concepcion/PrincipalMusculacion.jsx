@@ -22,6 +22,9 @@ const PrincipalMusculacion = () => {
     navigate('/concepcion/musculacion/tarjeta-debito', { replace: false });
   };
 
+  const numConcepcion = '3865855100';
+
+
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -34,14 +37,19 @@ const PrincipalMusculacion = () => {
         </p>
       </div>
       <div className="plan-info">
-        <p className="plan-text">
-        Monto a abonar: $23.000
-        </p>
+        <p className="plan-text">Monto a abonar: $23.000</p>
       </div>
 
-      <div className="payment-info" style={{cursor: "not-allowed"}}>
-        <img src={Tarjeta} alt="Tarjeta de crédito" className="card-icon" style={{backgroundColor: "#C3C3C3"}} />
-        <p className="payment-text" style={{backgroundColor: "#C3C3C3"}}>Tarjeta de crédito</p>
+      <div className="payment-info" style={{ cursor: 'not-allowed' }}>
+        <img
+          src={Tarjeta}
+          alt="Tarjeta de crédito"
+          className="card-icon"
+          style={{ backgroundColor: '#C3C3C3' }}
+        />
+        <p className="payment-text" style={{ backgroundColor: '#C3C3C3' }}>
+          Tarjeta de crédito
+        </p>
       </div>
 
       <div className="payment-info" onClick={handleDebitoClick}>
@@ -56,9 +64,11 @@ const PrincipalMusculacion = () => {
 
       <div className="payment-info" onClick={handleEfectivoClick}>
         <img src={Efectivo} alt="Efectivo" className="card-icon" />
-        <p className="payment-text" title='¡5% off! 🤩'>Efectivo</p>
+        <p className="payment-text" title="¡5% off! 🤩">
+          Efectivo
+        </p>
       </div>
-      <Promociones></Promociones>
+      <Promociones num={numConcepcion}></Promociones>
     </div>
   );
 };
