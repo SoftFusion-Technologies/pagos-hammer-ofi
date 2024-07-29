@@ -53,7 +53,7 @@ const Transferencia = () => {
               o hacé click aquí
             </a>
           </p>
-          <p className="abonar">Total a abonar: $57.000</p>
+          <p className="abonar">Total a abonar: $57.000 (¡10% OFF!)</p>
         </div>
         <Promociones />
       </div>

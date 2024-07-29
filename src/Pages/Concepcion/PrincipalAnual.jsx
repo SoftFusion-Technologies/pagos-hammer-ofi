@@ -26,6 +26,8 @@ const PrincipalAnual = () => {
     navigate('/concepcion/anual/cuotas', { state: { cuotas1: true, cuotas3: true, cuotas6: true, cuotas12: true } }); //cantidad de cuotas habilitadas
   };
 
+  const numConcepcion = '3865855100';
+
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -34,12 +36,12 @@ const PrincipalAnual = () => {
       </h1>
       <div className="plan-info">
         <p className="plan-text">
-          Estás por abonar tu plan: Anual Concepción
+          Estás por abonar tu plan: Anual (sede Concepción)
         </p>
       </div>
-      <div className="plan-info">
+      {/* <div className="plan-info">
         <p className="plan-text">Monto a abonar: $276.000</p>
-      </div>
+      </div> */}
 
       <div
         className="payment-info"
@@ -54,10 +56,10 @@ const PrincipalAnual = () => {
         <p className="payment-text" onClick={handleAnualClick}>Tarjeta de crédito</p>
       </div>
 
-      <div className="payment-info" onClick={handleDebitoClick}>
+      {/* <div className="payment-info" onClick={handleDebitoClick}>
         <img src={Tarjeta} alt="Tarjeta de débito" className="card-icon" />
         <p className="payment-text">Tarjeta de débito</p>
-      </div>
+      </div> */}
 
       <div className="payment-info" onClick={handleTransferenciaClick}>
         <img src={Transferencia} alt="Transferencia" className="card-icon" />
@@ -66,11 +68,11 @@ const PrincipalAnual = () => {
 
       <div className="payment-info" onClick={handleEfectivoClick}>
         <img src={Efectivo} alt="Efectivo" className="card-icon" />
-        <p className="payment-text" title="¡5% off! 🤩">
+        <p className="payment-text">
           Efectivo
         </p>
       </div>
-      <Promociones></Promociones>
+      <Promociones num={numConcepcion}></Promociones>
     </div>
   );
 };

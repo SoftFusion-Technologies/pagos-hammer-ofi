@@ -70,7 +70,7 @@ const PrincipalAnual = () => {
 
       <div className="payment-info" onClick={handleEfectivoClick}>
         <img src={Efectivo} alt="Efectivo" className="card-icon" />
-        <p className="payment-text" title="¡5% off! 🤩">
+        <p className="payment-text">
           Efectivo
         </p>
       </div>

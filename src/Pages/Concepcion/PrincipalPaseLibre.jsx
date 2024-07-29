@@ -23,6 +23,8 @@ const PrincipalPaseLibre = () => {
     navigate('/concepcion/paselibre/tarjeta-debito', { replace: false });
   };
 
+  const numConcepcion = '3865855100';
+
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -31,14 +33,14 @@ const PrincipalPaseLibre = () => {
       </h1>
       <div className="plan-info">
         <p className="plan-text">
-          Estás por abonar tu plan: Pase Libre Concepción
+          Estás por abonar $24.500 de : Pase Libre (sede Concepción)
         </p>
       </div>
-      <div className="plan-info">
+      {/* <div className="plan-info">
         <p className="plan-text">Monto a abonar: $24.500</p>
-      </div>
+      </div> */}
 
-      <div className="payment-info" style={{ cursor: 'not-allowed' }}>
+      {/* <div className="payment-info" style={{ cursor: 'not-allowed' }}>
         <img
           src={Tarjeta}
           alt="Tarjeta de crédito"
@@ -48,7 +50,7 @@ const PrincipalPaseLibre = () => {
         <p className="payment-text" style={{ backgroundColor: '#C3C3C3' }}>
           Tarjeta de crédito
         </p>
-      </div>
+      </div> */}
 
       <div className="payment-info" onClick={handleDebitoClick}>
         <img src={Tarjeta} alt="Tarjeta de débito" className="card-icon" />
@@ -62,11 +64,11 @@ const PrincipalPaseLibre = () => {
 
       <div className="payment-info" onClick={handleEfectivoClick}>
         <img src={Efectivo} alt="Efectivo" className="card-icon" />
-        <p className="payment-text" title="¡5% off! 🤩">
+        <p className="payment-text">
           Efectivo
         </p>
       </div>
-      <Promociones></Promociones>
+      <Promociones num={numConcepcion}></Promociones>
     </div>
   );
 };
