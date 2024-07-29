@@ -28,25 +28,25 @@ const Promociones = ({ num }) => {
       <Plan
         imageSrc={Trimestral}
         altText="Promoción Trimestral"
-        message="PLAN TRIMESTRAL MONTEROS"
+        message="PLAN TRIMESTRAL"
         num={num}
       />
       <Plan
         imageSrc={Semestral}
         altText="Promoción Semestral"
-        message="PLAN SEMESTRAL MONTEROS"
+        message="PLAN SEMESTRAL"
         num={num}
       />
       <Plan
         imageSrc={Anual}
         altText="Promoción Anual"
-        message="PLAN ANUAL MONTEROS"
+        message="PLAN ANUAL"
         num={num}
       />
       <Plan
         imageSrc={Macro}
         altText="Promoción Macro"
-        message="PLAN MACRO MONTEROS"
+        message="PLAN MACRO"
         num={num}
       />
     </div>
