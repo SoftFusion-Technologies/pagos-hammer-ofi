@@ -42,6 +42,7 @@ const Transferencia = () => {
               onClick={handleCopyClick}
             />
           </div>
+          
           <p className="texttr">
             Para poder gestionar tu pago no te olvides de descargar tu factura y
             enviarla al siguiente número
@@ -56,7 +57,7 @@ const Transferencia = () => {
               o hacé click aquí
             </a>
           </p>
-          <p className="abonar">Total a abonar: $138.000</p>
+          <p className="abonar">Total a abonar: $138.000 (¡1 MESES GRATIS!)</p>
         </div>
         <Promociones />
       </div>

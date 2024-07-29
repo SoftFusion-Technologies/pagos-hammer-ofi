@@ -30,6 +30,7 @@ const Transferencia = () => {
           <div className="overlay"></div>
           <h2 className="h2">Plan Trimestral Monteros</h2>
           <p className="texttr">REALIZÁ TUS TRANSFERENCIAS AL SIGUIENTE CBU</p>
+         
           <div className="cbu-container">
             <p className="cbutext">0000003100078710747645</p>
             <img
@@ -39,6 +40,7 @@ const Transferencia = () => {
               onClick={handleCopyClick}
             />
           </div>
+          
           <p className="texttr">
             Para poder gestionar tu pago no te olvides de descargar tu factura y
             enviarla al siguiente número

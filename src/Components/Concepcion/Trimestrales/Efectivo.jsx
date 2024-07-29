@@ -19,7 +19,7 @@ const Efectivo = () => {
           para que juntos gestionemos tu pago en efectivo.
         </h1>
         <p style={{ color: 'black', zIndex: '10', fontSize: '23px' }}>
-          TOTAL A ABONAR $69.000
+          TOTAL A ABONAR $69.000 (¡10% OFF!)
         </p>
         <p className="box-text">GRACIAS POR ELEGIRNOS</p>
       </div>

@@ -39,6 +39,7 @@ const Transferencia = () => {
               onClick={handleCopyClick}
             />
           </div>
+          
           <p className="texttr">y enviá tu comprobante a nuestro whatsapp</p>
           <p className="textnum">
             <span className="num">3863564651</span>{' '}
