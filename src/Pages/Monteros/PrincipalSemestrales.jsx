@@ -25,6 +25,8 @@ const PrincipalTrimestrales = () => {
   const handleSemestralClick = () => {
     navigate('/monteros/semestrales/cuotas', { state: { cuotas1: true, cuotas3: true, cuotas6: true, cuotas12: false } }); //cantidad de cuotas habilitadas
   };
+  
+  const numMonteros = '3863564651';
 
   return (
     <div className="content">
@@ -34,12 +36,12 @@ const PrincipalTrimestrales = () => {
       </h1>
       <div className="plan-info">
         <p className="plan-text">
-          Estás por abonar tu plan: semestral monteros
+          Estás por abonar tu plan: semestral (sede monteros)
         </p>
       </div>
-      <div className="plan-info">
+      {/* <div className="plan-info">
         <p className="plan-text">Monto a abonar: $114.000</p>
-      </div>
+      </div> */}
 
       <div
         className="payment-info"
@@ -53,11 +55,11 @@ const PrincipalTrimestrales = () => {
         />
         <p className="payment-text" onClick={handleSemestralClick}>Tarjeta de crédito</p>
       </div>
-
+{/* 
       <div className="payment-info" onClick={handleDebitoClick}>
         <img src={Tarjeta} alt="Tarjeta de débito" className="card-icon" />
         <p className="payment-text">Tarjeta de débito</p>
-      </div>
+      </div> */}
 
       <div className="payment-info" onClick={handleTransferenciaClick}>
         <img src={Transferencia} alt="Transferencia" className="card-icon" />
@@ -70,7 +72,7 @@ const PrincipalTrimestrales = () => {
           Efectivo
         </p>
       </div>
-      <Promociones></Promociones>
+      <Promociones num={numMonteros}></Promociones>
     </div>
   );
 };

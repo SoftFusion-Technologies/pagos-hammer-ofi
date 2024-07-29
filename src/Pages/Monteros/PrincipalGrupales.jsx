@@ -23,6 +23,8 @@ const PrincipalGrupales = () => {
     navigate('/monteros/grupales/tarjeta-debito', { replace: false });
   };
 
+  const numMonteros = '3863564651';
+
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -31,14 +33,14 @@ const PrincipalGrupales = () => {
       </h1>
       <div className="plan-info">
         <p className="plan-text">
-          Estás por abonar tu plan: grupales monteros
+          Estás por abonar $16.600 de: grupales (sede monteros)
         </p>
       </div>
-      <div className="plan-info">
+      {/* <div className="plan-info">
         <p className="plan-text">Monto a abonar: $16.600</p>
-      </div>
+      </div> */}
 
-      <div className="payment-info" style={{ cursor: 'not-allowed' }}>
+      {/* <div className="payment-info" style={{ cursor: 'not-allowed' }}>
         <img
           src={Tarjeta}
           alt="Tarjeta de crédito"
@@ -48,7 +50,7 @@ const PrincipalGrupales = () => {
         <p className="payment-text" style={{ backgroundColor: '#C3C3C3' }}>
           Tarjeta de crédito
         </p>
-      </div>
+      </div> */}
 
       <div className="payment-info" onClick={handleDebitoClick}>
         <img src={Tarjeta} alt="Tarjeta de débito" className="card-icon" />
@@ -66,7 +68,7 @@ const PrincipalGrupales = () => {
           Efectivo
         </p>
       </div>
-      <Promociones></Promociones>
+      <Promociones num={numMonteros}></Promociones>
     </div>
   );
 };

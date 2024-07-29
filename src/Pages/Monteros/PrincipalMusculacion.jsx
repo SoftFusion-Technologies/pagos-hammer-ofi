@@ -23,6 +23,7 @@ const PrincipalMusculacion = () => {
   };
 
   const numMonteros = "3863564651"
+  
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -31,7 +32,7 @@ const PrincipalMusculacion = () => {
       </h1>
       <div className="plan-info">
         <p className="plan-text">
-          Estás por abonar $19.000 de: mes musculación monteros
+          Estás por abonar $19.000 de: mes musculación (sede monteros)
         </p>
       </div>
       {/* <div className="plan-info">

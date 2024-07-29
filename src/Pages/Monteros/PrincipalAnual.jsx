@@ -26,6 +26,8 @@ const PrincipalAnual = () => {
     navigate('/monteros/anual/cuotas', { state: { cuotas1: true, cuotas3: true, cuotas6: true, cuotas12: true } }); //cantidad de cuotas habilitadas
   };
 
+  const numMonteros = '3863564651';
+
   return (
     <div className="content">
       <img src={Logo1} alt="Logo1" className="logo" />
@@ -34,12 +36,12 @@ const PrincipalAnual = () => {
       </h1>
       <div className="plan-info">
         <p className="plan-text">
-          Estás por abonar tu plan: Anual monteros
+          Estás por abonar tu plan: Anual (sede monteros)
         </p>
       </div>
-      <div className="plan-info">
+      {/* <div className="plan-info">
         <p className="plan-text">Monto a abonar: $228.000</p>
-      </div>
+      </div> */}
 
       <div
         className="payment-info"
@@ -51,13 +53,15 @@ const PrincipalAnual = () => {
           className="card-icon"
           //  se elimina el bloqueo de la tarjeta   style={{ backgroundColor: '#C3C3C3' }}
         />
-        <p className="payment-text" onClick={handleAnualClick}>Tarjeta de crédito</p>
+        <p className="payment-text" onClick={handleAnualClick}>
+          Tarjeta de crédito
+        </p>
       </div>
 
-      <div className="payment-info" onClick={handleDebitoClick}>
+      {/* <div className="payment-info" onClick={handleDebitoClick}>
         <img src={Tarjeta} alt="Tarjeta de débito" className="card-icon" />
         <p className="payment-text">Tarjeta de débito</p>
-      </div>
+      </div> */}
 
       <div className="payment-info" onClick={handleTransferenciaClick}>
         <img src={Transferencia} alt="Transferencia" className="card-icon" />
@@ -70,7 +74,7 @@ const PrincipalAnual = () => {
           Efectivo
         </p>
       </div>
-      <Promociones></Promociones>
+      <Promociones num={numMonteros}></Promociones>
     </div>
   );
 };
